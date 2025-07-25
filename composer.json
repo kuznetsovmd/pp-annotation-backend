@@ -1,0 +1,24 @@
+{
+  "name": "user/php-engine",
+  "description": "php engine",
+  "type": "project",
+  "require": {
+    "symfony/var-dumper": "^4.3",
+    "ext-pdo": "*",
+    "ext-readline": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/",
+      "Engine\\": "engine/"
+    },
+    "files": [
+      "env.php",
+      "config/middlewares.php",
+      "config/permissions.php",
+      "config/routes.php",
+      "config/services.php",
+      "bootstrap/web_bootstrap.php"
+    ]
+  }
+}
